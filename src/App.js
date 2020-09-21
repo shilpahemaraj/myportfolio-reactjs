@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { Layout, Navigation, Drawer, Content, Header } from "react-mdl";
 import "./App.css";
 import Main from "./components/main";
@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 class App extends Component {
   render() {
     return (
+      <Fragment>
       <div className="demo-big-content">
         <Layout>
           <Header
@@ -41,6 +42,7 @@ class App extends Component {
           </Content>
         </Layout>
       </div>
+      </Fragment>
     );
   }
 }
